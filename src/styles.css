@@ -49,3 +49,9 @@ li {
 .weather-search-form {
   margin-bottom: 20px;
 }
+.footer{
+  text-align: center;
+  position: relative;
+  left: -200px;
+  top: -10px;
+}
