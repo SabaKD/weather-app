@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Weatehr App</title>
+  <meta charset="UTF-8" />
+  <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+  <link href="src/styles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="weather-app">
+      <form class="weather-search-form">
+        <div class="row">
+          <div class="col-6">
+            <input type="search" placeholder="Type a city..." class="form-control" id="search-input" />
+          </div>
+          <div class="col-3">
+            <input type="submit" value="Search" class="form-control btn btn-primary" id="search-btn" />
+          </div>
+          <div class="col-3">
+            <input type="submit" value="Current" class="form-control btn btn-success" id="current-btn" />
+          </div>
+        </div>
+      </form>
+      <h1>
+        Sydney NSW, Austrailia
+      </h1>
+      <ul>
+        <li class="date">
+          Date
+        </li>
+        <li class="description">
+          Partly Cloudy
+        </li>
+      </ul>
+      <div class="row">
+        <div class="col-6">
+          <div class="clearfix">
+            <span class="float-start"> </span>
+            <span class="float-start">
+              <span class="temprature">19</span>
+              <span class="units">
+                ºC
+              </span>
+            </span>
+          </div>
+        </div>
+        <div class="col-6">
+          <ul>
+            <li>
+              Precipitation: 0%
+            </li>
+            <li class="humidity">
+              Humidity: 77%
+            </li>
+            <li class="wind">
+              Wind: 8 km/h
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="src/index.js"></script>
+</body>
+
+</html>
